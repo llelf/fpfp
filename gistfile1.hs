@@ -66,6 +66,7 @@ pawnTakingDirs = toDirs [(pred,pred),(succ,succ)]
 
 -- Moves
 -- NB Much simplified rules
+--    (at least) no en passant takings, pawn promotions, castling, draws
 
 normMove p pos pos' = Move p pos pos' False
 takingMove p pos pos' = Move p pos pos' True
